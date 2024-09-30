@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.nameText {
+
+  position: relative;
+  margin: 2vmin;
+  text-align: center;
+
+  color: #909090;
+  font-family: Ubuntu;
+  font-size: 2vmin;
+  word-spacing: 10px;
+
+  text-shadow: 0 0 5px #202020;
+
+  top: 6.5vmin;
+
+}
+
+.nameBadge {
+
+  position: relative;
+  text-align: center;
+
+  top: 8vmin;
+
+}
+
+.nameBadge img {
+
+  position: relative;
+
+  border-radius: 5px;
+  width: 90vmin;
+  height: 60vmin;
+
+  box-shadow: 11px 11px 20px #202020;
+
+  transition-duration: 0.2s;
+
+}
+
+.nameBadge img:hover {
+
+  box-shadow: 11px 11px 50px #202020;
+
+}
+
+.buttonSoc:hover, .buttonBall:hover {
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background-color: #202020;
+  border-style: none solid solid none;
+  border-color: #909090;
+
+}
+
+.buttonName {
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-style: none solid solid none;
+
+}

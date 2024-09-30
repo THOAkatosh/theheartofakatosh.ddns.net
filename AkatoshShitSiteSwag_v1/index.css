@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+
+    margin: 0;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(30deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.mainmain {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.main {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 1vh 1vw 1vh 1vw;
+
+    width: 80vw;
+    height: fit-content;
+
+    border-radius: 10px;
+    background-color: #696969;
+
+}
+
+.continue {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 70vw;
+    height: 40vh;
+
+    margin: 10%;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    border-style: none solid solid none;
+    border-color: #303030;
+    border-radius: 2vmin;
+    border-width: 1vmin;
+
+    text-decoration: none;
+
+    font-family: Ubuntu;
+    font-size: 5vmin;
+    font-weight: bolder;
+    color: #505050;
+
+    background-color: #909090;
+    transition-duration: 0.2s;
+
+}
+
+.continue:hover {
+
+    border-color: #505050;
+    border-style: solid none none solid;
+
+}

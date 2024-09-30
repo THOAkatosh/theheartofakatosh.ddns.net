@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+
+  margin: 0;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(30deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  background-size: 200% 200%;
+  animation: gradient 3s ease infinite;
+
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.main{
+
+    margin: 1vh 1vw 1vh 1vw;
+
+    width: 98vw;
+    height: 98vh;
+
+    border-radius: 10px;
+    background-color: #696969;
+
+}
+
+.hold{
+
+    position: relative;
+
+    width: 90%;
+    height: 8vmin;
+
+    margin-left: auto;
+    margin-right: auto;
+    top: 3%;
+
+    border-radius: 10px;
+
+    background-color: #404040;
+
+    transition-duration: 0.2s;
+
+}
+
+.hold:hover {
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  background-color: #202020;
+  border-style: none solid solid none;
+  border-color:#909090;
+
+}
+
+.hold a{
+
+  text-decoration: none;
+
+}
+
+.buttHow a {
+
+  text-decoration: none;
+
+}
+
+.mainText{
+
+  position: relative;
+  text-align: center;
+  font-size: 5vmin;
+  color: #909090;
+  letter-spacing: 5px;
+
+}
+
+.buttHow{
+
+    width: 90%;
+    height: 7vmin;
+
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 4%;
+
+    text-align: center;
+
+}
+
+.button{
+
+  position: relative;
+  display: inline-block;
+  margin: 1.2vmin;
+
+  color: #909090;
+  font-size: 3vmin;
+  font-family: Ubuntu;
+  letter-spacing: 5px;
+
+  width: 25vmin;
+  height: 4vmin;
+
+  border-radius: 5px;
+  background-color: #404040;
+
+  transition-duration: 0.2s;
+
+}

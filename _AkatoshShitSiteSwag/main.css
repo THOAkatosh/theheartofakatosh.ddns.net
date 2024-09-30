@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@media screen and (min-width: 990px) {
+
+    body {
+
+        margin: 0;
+        background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGQ0Zm1yaTB2b2xpN3Z6d2twdjJpOGdteDM1dGVheWI3MTVqeGd4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3vRbNFMuFt5Zm372/giphy.gif");
+        background-size: cover;
+        animation: gradient 40s ease infinite;
+        user-select: none;
+    
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+    
+        50% {
+            background-position: 100% 50%;
+        }
+    
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .tiButt{
+
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+        width: 100dvw;
+
+    }
+    
+    .main {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        backdrop-filter: blur(5px);
+
+        width: 600px;
+        height: 600px;
+
+        border-radius: 10px;
+        background-color: #0000009a;
+
+        box-shadow: 0 0 5px 5px #0000009a;
+
+        scale: 95%;
+        
+    }
+
+    .nbody {   
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 100dvw;
+        height: 100dvh;
+    
+        background-color: #1110108a;
+        box-shadow: inset 0 0 7dvh 7dvh #000000eb;
+    
+    }
+
+    .title {
+
+        position: absolute;
+        top: 4%;
+    
+        font-family: Ubuntu;
+        font-size: 37px;
+        font-weight: bolder;
+        letter-spacing: 4px;
+        color: rgba(182, 219, 251, 0.73);
+        text-decoration: none;
+        transition-duration: 0.5s;
+    
+    }
+    
+    .title:hover {
+    
+        text-shadow: 0 0 15px rgba(182, 219, 251, 0.73),  0 0 15px rgba(182, 219, 251, 0.73);
+        transition-duration: 0.5s;
+    
+    }
+    
+    .but_tabs {
+    
+        position: absolute;
+        top: 16%;  
+    
+    }
+    
+    .but_name, .but_fun, .but_socia {
+    
+        margin: 0 30px 0 30px;
+        font-family: Ubuntu;
+        font-size: 19px;
+        font-weight: bolder;
+        letter-spacing: 6px;
+        color: rgba(182, 219, 251, 0.73);
+        text-decoration: none;
+        transition-duration: 0.5s;
+    
+    }
+    
+    .but_name:hover, .but_fun:hover, .but_socia:hover {
+    
+        text-shadow: 0 0 15px rgba(182, 219, 251, 0.73),  0 0 15px rgba(182, 219, 251, 0.73);
+        transition-duration: 0.5s;
+    
+    }
+    
+    .ver0_5 {
+    
+        position: absolute;
+            
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        left: -48px;
+        top: 30px;
+    
+        width: 39px;
+        height: 40px;
+    
+        border-radius: 5px 0 0 5px;
+        background-color: #0000009a;
+    
+        box-shadow: 0 0 5px 5px #0000009a;  
+    
+    }
+    
+    .ver1 {
+    
+        position: absolute;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        left: -40px;
+        top: 90px;
+    
+        width: 31px;
+        height: 40px;
+    
+        border-radius: 5px 0 0 5px;
+        background-color: #0000009a;
+    
+        box-shadow: 0 0 5px 5px #0000009a;  
+    
+    }
+    
+    .ver0_5 a, .ver1 a {
+    
+        position: relative;
+        left: 3px;
+    
+        text-decoration: none;
+        font-family: Ubuntu;
+        font-weight: bolder;
+        color: rgba(182, 219, 251, 0.73);
+        transition-duration: 0.5s;
+    
+    }
+    
+    .ver0_5 a:hover, .ver1 a:hover {
+    
+        text-shadow: 0 0 3px rgba(182, 219, 251, 0.73);
+        transition-duration: 0.5s;
+    
+    }
+
+}
+
+/* 
+##############################################
+##############################################
+############################################## 
+*/
+
+@media screen and (max-width: 990px) {
+
+    body {
+
+        margin: 0;
+        background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGQ0Zm1yaTB2b2xpN3Z6d2twdjJpOGdteDM1dGVheWI3MTVqeGd4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3vRbNFMuFt5Zm372/giphy.gif");
+        background-size: cover;
+        animation: gradient 120s ease infinite;
+        user-select: none;
+
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .main {
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        backdrop-filter: blur(5px);
+
+        width: 100dvw;
+        height: 100dvh;
+
+        border-radius: 10px;
+        background-color: #0000009a;
+
+        box-shadow: 0 0 5px 5px #0000009a;
+
+    }
+
+    .nbody {   
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100dvw;
+        height: 100dvh;
+        
+    }
+
+    .tiButt{
+
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+        width: 100dvw;
+
+    }
+
+    .title {
+
+        position: relative;
+
+        margin: 2dvw;
+
+        font-family: Ubuntu;
+        font-size: 7dvw;
+        font-weight: bolder;
+        letter-spacing: 0.15dvh;
+        color: rgba(182, 219, 251, 0.73);
+        text-decoration: none;
+        transition-duration: 0.5s;
+    
+    }
+    
+    .title:hover {
+    
+        text-shadow: 0 0 15px rgba(182, 219, 251, 0.73),  0 0 15px rgba(182, 219, 251, 0.73);
+        transition-duration: 0.5s;
+    
+    }
+    
+    .but_tabs {
+    
+        margin: 1dvw;
+
+    }
+    
+    .but_name, .but_fun, .but_socia {
+    
+        margin: 0 6dvw 0 6dvw;
+        font-family: Ubuntu;
+        font-size: 4dvw;
+        font-weight: bolder;
+        letter-spacing: 0.15dvh;
+        color: rgba(182, 219, 251, 0.73);
+        text-decoration: none;
+        transition-duration: 0.5s;
+    
+    }
+    
+    .but_name:hover, .but_fun:hover, .but_socia:hover {
+    
+        text-shadow: 0 0 15px rgba(182, 219, 251, 0.73),  0 0 15px rgba(182, 219, 251, 0.73);
+        transition-duration: 0.5s;
+    
+    } 
+    
+    .ver0_5 {
+    
+        position: absolute;
+            
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        bottom: 3dvw;
+        left: 3dvw;
+    
+        width: 9dvw;
+        height: 9dvw;
+    
+        border-radius: 8px;
+        background-color: #0000009a;
+    
+        box-shadow: 0 0 6px 2px rgba(182, 219, 251, 0.73), inset 0 0 6px 2px rgba(182, 219, 251, 0.73);  
+    
+    }
+    
+    .ver1 {
+    
+        position: absolute;
+            
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        bottom: 3dvw;
+        left: 16dvw;
+    
+        width: 9dvw;
+        height: 9dvw;
+    
+        border-radius: 8px;
+        background-color: #0000009a;
+    
+        box-shadow: 0 0 6px 2px rgba(182, 219, 251, 0.73), inset 0 0 6px 2px rgba(182, 219, 251, 0.73);  
+    
+    }
+    
+    .ver0_5 a, .ver1 a {
+    
+        position: relative;
+    
+        text-decoration: none;
+        font-family: Ubuntu;
+        font-size: 2.5dvw;
+        font-weight: bolder;
+        color: rgba(182, 219, 251, 0.73);
+        text-shadow: 0 0 15px rgba(182, 219, 251, 0.73);
+        transition-duration: 0.3s;
+
+    
+    }
+
+} 

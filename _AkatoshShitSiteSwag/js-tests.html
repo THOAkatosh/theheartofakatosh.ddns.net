@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta content="true" name="HandheldFriendly" />
+    <meta content="width" name="MobileOptimized" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta property="og:title" content="💀 ジャングルドラゴンの咆哮 🌌" />
+    <meta property="og:type" content="video.episode" />
+    <meta property="og:description" content="
+    ⠀⠀⠀⠀⠀⠀⠀~ It is what it is. ~
+    ⠀
+    Когда мы с мишей учились в шестом кл-
+    ассе, к нам привели Стаса. Человеком 
+    онбыл неадекватным, но вроде как не 
+    по своей вине. Страдал он от какого-
+    ттамотклонения типа нарколепсии (ког-
+    да люди засыпают неожиданно), только 
+    он незасыпал, а залипал. Наглухо причём."/>
+    <meta property="og:image" content="https://i.imgur.com/q18ojGS.gif" />
+    <meta property="og:url" content="https://theheartofakatosh.ddns.net/">
+    <meta name="theme-color" content="#94aec6">
+    
+    <title>ジャングルドラゴンの咆哮</title>
+
+    <link rel="icon" type="image/x-icon" href="\image\favicon.ico"></link>
+
+    <link rel="stylesheet" href="\main.css">
+
+    <style> .popa { width: 80%; } </style>
+
+</head>
+
+<body>
+
+    <div class="nbody">
+
+    </div>
+
+</body>
+
+<script>
+    function isPrime(num) {
+        if (num <= 1) return false;
+        if (num <= 3) return true;
+
+        if (num % 2 === 0 || num % 3 === 0) return false;
+
+        return true;
+    }
+
+    let primes = []
+
+    function printPrimes(n) {
+        for (let i = 2; i <= n; i++) {
+            if (isPrime(i)) {
+                primes.push(i);
+            }
+        }
+        console.log(primes);
+        alert(primes.join(", "));
+    }
+
+    // printPrimes();
+
+    function fib(n) {
+        if (n === 1 || n === 2) {
+            return 1;
+        }
+        return fib(n - 1) + fib(n - 2);
+    }
+
+    /*
+    let n = prompt("Введите число для получения числа фибоначчи: ");
+    console.log(fib(n));
+    alert(fib(n)); 
+    */
+
+    function getFun(n) {
+    let months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
+        switch (true) {
+            case (n == 12 || n >= 1 && n <= 2):
+                return `${months[Number(n)-1]}, Зима`;
+            case (n >= 3 && n <= 5):
+                return `${months[Number(n)-1]}, Весна`;
+            case (n >= 6 && n <= 8):
+                return `${months[Number(n)-1]}, Лето`;
+            case (n >= 9 && n <= 11):
+                return `${months[Number(n)-1]}, Осень`;
+            case (n <= 0 || n < 12):
+                return "Out of range"
+        }
+    }
+    
+    /*
+    for (let i = 1; i <= 12; i++) {
+        console.log(getFun(i))
+    }
+    */
+
+</script>
+
+</html>
