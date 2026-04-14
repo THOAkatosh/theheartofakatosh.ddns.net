@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.YouT {
+
+    position: relative;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    top: 10vmin;
+    border-radius: 10px;
+    width: 85vmin;
+    height: 70vmin;
+  
+    box-shadow: 0 11px 27px #202020;
+
+}
+
+.YouB {
+
+    position: relative;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    top: -60vmin;
+    width: 85vmin;
+    height: 70vmin;
+
+}
+
+.buttonName:hover, .buttonSoc:hover {
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  background-color: #202020;
+  border-style: none solid solid none;
+  border-color:#909090;
+
+}
+
+.buttonBall {
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-style: none solid solid none;
+
+}

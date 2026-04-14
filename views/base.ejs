@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="<%= title %>" />
+    <meta property="og:type" content="video.episode" />
+    <meta property="og:description" content="
+    ⠀⠀⠀⠀⠀⠀⠀~ It is what it is. ~
+    ⠀
+    Когда мы с мишей учились в шестом кл-
+    ассе, к нам привели Стаса. Человеком 
+    онбыл неадекватным, но вроде как не 
+    по своей вине. Страдал он от какого-
+    ттамотклонения типа нарколепсии (ког-
+    да люди засыпают неожиданно), только 
+    он незасыпал, а залипал. Наглухо причём." />
+    <meta property="og:image" content="https://i.imgur.com/q18ojGS.gif" />
+    <meta property="og:url" content="https://theheartofakatosh.ddns.net/">
+    <meta name="theme-color" content="#94aec6">
+    <title><%= title %></title>
+    <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
+    <link rel="stylesheet" href="/main.css">
+    <% if (headBlock) { %>
+        <%- headBlock %>
+    <% } %>
+</head>
+<body>
+    <div class="base">
+        <div class="base-header">
+            <a href="/"><img src="/image/header-icon.png" class="icon"></a>
+        </div>
+        <div class="content">
+            <div class="left">
+                <div class="list">
+                    <div class="list-header">Content</div>
+                    <div class="list-content">
+                        <ul class="list-content-tabs">
+                            <li><img src="/image/list-node.gif"><a href="<%= activePage === 'welcome' ? '#' : '/' %>" class="<%= activePage === 'welcome' ? 'current' : '' %>">Welcome</a></li>
+                            <li><img src="/image/list-node.gif"><a href="<%= activePage === 'fun' ? '#' : '/fun' %>" class="<%= activePage === 'fun' ? 'current' : '' %>">Fun</a></li>
+                            <li><img src="/image/list-node.gif"><a href="<%= activePage === 'socials' ? '#' : '/socials' %>" class="<%= activePage === 'socials' ? 'current' : '' %>">Socials</a></li>
+                        </ul>
+                        <p>Keyboards</p>
+                        <ul class="list-content-tabs">
+                            <li><img src="/image/list-node.gif"><a href="<%= activePage === 'boards' ? '#' : '/boards' %>" class="<%= activePage === 'boards' ? 'current' : '' %>">Collection</a></li>
+                            <li><img src="/image/list-node.gif"><a href="<%= activePage === 'wish-boards' ? '#' : '/wish-boards' %>" class="<%= activePage === 'wish-boards' ? 'current' : '' %>">Wishlist</a></li>
+                        </ul>
+                        <p>OpenAG</p>
+                        <ul class="list-content-tabs">
+                            <li><img src="/image/list-node.gif"><a class="inactive">Servers</a></li>
+                            <li><img src="/image/list-node.gif"><a class="inactive">FastDL</a></li>
+                        </ul>
+                        <p>Old Site Versions</p>
+                        <ul class="list-content-tabs">
+                            <li><img src="/image/list-node.gif"><a href="/0.0">Version 0.0</a></li>
+                            <li><img src="/image/list-node.gif"><a href="/0.5">Version 0.5</a></li>
+                            <li><img src="/image/list-node.gif"><a href="/1.0">Version 1.0</a></li>
+                            <li><img src="/image/list-node.gif"><a href="/2.0">Version 2.0</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-content">
+                    <%- body %>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

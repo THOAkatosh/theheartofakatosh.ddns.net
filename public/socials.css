@@ -1,0 +1,157 @@
+:root {
+    --color-lighterer-blue: rgb(192, 217, 250);
+    --color-lighter-blue: #8cacdf;
+    --color-light-blue: #6488dd;
+    --color-blue: #1447ae;
+    --color-text: #3366FF;
+    --color-list-bg: #edf2fb;
+    --color-text-highlight: #000080;
+}
+
+.tg-discord-holder {
+    display: flex;
+    width: 700px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+.Discord, .Telegram {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.Discord > a, .Telegram > a {
+    display: flex;
+    font-size: 10pt;
+    font-weight: bolder;
+    align-items: center;
+    color: var(--color-text-highlight);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Discord > a.inactive, .Telegram > a.inactive {
+    color: gray;
+    cursor: not-allowed;
+}
+
+.Discord > a.inactive img, .Telegram > a.inactive img {
+    filter: grayscale(100%);
+}
+
+
+.tg-discord-holder .arrow {
+    transition: margin 300ms;
+}
+
+.tg-discord-holder .arrow.reverse {
+    scale: -100% 100%;
+    transition: margin 300ms;
+}
+
+.linesHold {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 auto 25px auto;
+    top: 28%;
+    width: fit-content;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 145px;
+    height: 145px;
+    border: 1px solid var(--color-blue);
+    background-color: var(--color-list-bg);
+    cursor: pointer;
+}
+
+.linktext {
+    display: flex;
+    font-size: 10pt;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: var(--color-text-highlight);
+}
+
+.linktext .arrow {
+    scale: 90%;
+    transition: margin 300ms;
+}
+
+.linktext .arrow.reverse {
+    scale: -90% 90%;
+    transition: margin 300ms;
+}
+
+.buttons .button-icon {
+    position: relative;
+    filter: saturate(0.6);
+    width: 85px;
+    height: 85px;
+}
+
+.button-icon {
+    margin-bottom: 5px;
+}
+
+.easter .button-icon {
+    border-radius: 100%;
+}
+
+.copy-message {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: -400px;
+    width: 100px;
+    height: 50px;
+    background-color: var(--color-list-bg);
+    transition: all 300ms;
+}
+
+.copy-message-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    padding-left: 5px;
+    font-size: 9pt;
+    font-weight: bolder;
+    color: white;
+    background-color: var(--color-blue);
+}
+
+.copy-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10pt;
+    width: 100%;
+    height: calc(100% - 20px);
+    color: var(--color-text);
+    border: 1px solid var(--color-blue);
+}
+
+.copy-message.show {
+    display: block;
+    right: 15px;
+    transition: all 300ms;
+}

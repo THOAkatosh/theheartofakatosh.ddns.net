@@ -1,0 +1,4 @@
+node_modules
+package-lock.json
+image_to_folder.bat
+image_to_folder.py

@@ -1,0 +1,49 @@
+
+.main{
+
+    width: 800px;
+    height: 750px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    border-radius: 10px;
+
+    background-color: #696969;
+    border: 3px;
+
+}
+
+.nameText{
+
+  position: relative;
+  text-align: center;
+
+  color: #909090;
+  font-family: Ubuntu;
+  word-spacing: 10px;
+
+  text-shadow: 0 0 5px #202020;
+
+  top: 80px;
+
+}
+
+.nameBadge{
+
+  position: relative;
+  text-align: center;
+
+  top: 100px;
+
+}
+
+.nameBadge img {
+
+    border-radius: 5px;
+
+    box-shadow: 0 11px 27px #202020;
+
+}
