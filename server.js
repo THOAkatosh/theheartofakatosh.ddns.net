@@ -1,3 +1,4 @@
+const serveIndex = require('serve-index');
 const engine = require('ejs-mate');
 const express = require('express');
 const app = express();
@@ -46,6 +47,21 @@ app.get('/wish-boards', (req, res) => {
         activePage: 'wish-boards'
     });
 });
+
+app.get('/ag', (req, res) => {
+    res.render('ag', {
+        title: 'The Grand Sus | AG Servers',
+        headBlock: '<link rel="stylesheet" href="/ag.css">',
+        activePage: 'ag'
+    });
+});
+
+app.use('/fastdl',
+    express.static('/www/wwwroot/theheartofakatosh.ddns.net/public/fastdl/'),
+    serveIndex('/www/wwwroot/theheartofakatosh.ddns.net/public/fastdl/', {
+        icons: true
+    })
+);
 
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
