@@ -125,7 +125,7 @@ body {
     height: 150px;
     left: 0;
     bottom: 10px;
-    transition: all 50ms;
+    transition: all 500ms;
 }
 
 .clippy.hidden {
