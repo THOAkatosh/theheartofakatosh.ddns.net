@@ -156,12 +156,12 @@ async function showKeyboardCard(keyboardData, mainImageSrc) {
 
     const prevBtn = document.createElement('button');
     prevBtn.className = 'carousel-btn prev';
-    prevBtn.innerHTML = '&lt;';
+    // prevBtn.innerHTML = '&lt;';
     prevBtn.disabled = availableImages.length <= 1;
 
     const nextBtn = document.createElement('button');
     nextBtn.className = 'carousel-btn next';
-    nextBtn.innerHTML = '&gt;';
+    // nextBtn.innerHTML = '&gt;';
     nextBtn.disabled = availableImages.length <= 1;
 
     const imgCounter = document.createElement('span');
@@ -246,11 +246,11 @@ async function showKeyboardCard(keyboardData, mainImageSrc) {
     card_desc.className = 'keyboard-description';
 
     const switchType = document.createElement('p');
-    switchType.innerHTML = `<strong>Switch Type:</strong> <span style="color:${keyboardData.Switch_Type_Color}">${keyboardData.Switch_Type}</span>`;
+    switchType.innerHTML = `Switch Type: <span style="color:${keyboardData.Switch_Type_Color}">${keyboardData.Switch_Type}</span>`;
     card_desc.appendChild(switchType);
 
     const switches = document.createElement('p');
-    switches.innerHTML = `<strong>Switches:</strong> <span style="color:${keyboardData.Switch_Color}">${keyboardData.Switch.replace("<------------------", keyboardData.Switch_Type)}</span>`;
+    switches.innerHTML = `Switches: <span style="color:${keyboardData.Switch_Color}">${keyboardData.Switch.replace("<------------------", keyboardData.Switch_Type)}</span>`;
     card_desc.appendChild(switches);
 
     // const description = document.createElement('p');
@@ -270,7 +270,7 @@ async function showKeyboardCard(keyboardData, mainImageSrc) {
     } else {
         priceText = priceValue;
     }
-    price.innerHTML = `<strong>Price:</strong> <span>${priceText}</span>`;
+    price.innerHTML = `Price: <span>${priceText}</span>`;
     card_desc.appendChild(price);
 
     card.appendChild(card_desc);
