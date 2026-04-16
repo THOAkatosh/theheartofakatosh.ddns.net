@@ -17,7 +17,7 @@
 #list_holder {
     display: grid;
     gap: 15px;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
     max-width: 768px;
     justify-content: center;
     justify-items: center;
