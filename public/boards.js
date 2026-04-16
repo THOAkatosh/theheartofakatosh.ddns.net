@@ -49,6 +49,7 @@ fetch('boards.json')
             elm.appendChild(imgcontainer);
 
             imgcontainer.addEventListener('click', function (e) {
+                clickAudio.play();
                 e.stopPropagation();
                 showKeyboardCard(element, imageSrc);
             });
@@ -156,13 +157,15 @@ async function showKeyboardCard(keyboardData, mainImageSrc) {
 
     const prevBtn = document.createElement('button');
     prevBtn.className = 'carousel-btn prev';
-    // prevBtn.innerHTML = '&lt;';
-    prevBtn.disabled = availableImages.length <= 1;
+    if (availableImages.length <= 1) {
+        prevBtn.classList.add("disabled")
+    }
 
     const nextBtn = document.createElement('button');
     nextBtn.className = 'carousel-btn next';
-    // nextBtn.innerHTML = '&gt;';
-    nextBtn.disabled = availableImages.length <= 1;
+    if (availableImages.length <= 1) {
+        nextBtn.classList.add("disabled")
+    }
 
     const imgCounter = document.createElement('span');
     imgCounter.className = 'carousel-counter';
@@ -204,8 +207,17 @@ async function showKeyboardCard(keyboardData, mainImageSrc) {
 
         imgCounter.textContent = `${currentIndex + 1}/${availableImages.length}`;
 
-        prevBtn.disabled = currentIndex === 0;
-        nextBtn.disabled = currentIndex === availableImages.length - 1;
+        if (currentIndex === 0) {
+            prevBtn.classList.add("disabled")
+        } else if (prevBtn.classList.contains("disabled")) {
+            prevBtn.classList.remove("disabled")
+        }
+
+        if (currentIndex === availableImages.length - 1) {
+            nextBtn.classList.add("disabled")
+        } else if (nextBtn.classList.contains("disabled")) {
+            nextBtn.classList.remove("disabled")
+        }
 
         mainImg.onload = function () {
             if (this.width > 0) {
@@ -215,6 +227,7 @@ async function showKeyboardCard(keyboardData, mainImageSrc) {
                     button: false
                 });
                 const clickHandler = function (e) {
+                    clickAudio.play();
                     e.stopPropagation();
                     currentViewer.show();
                 };
@@ -230,12 +243,17 @@ async function showKeyboardCard(keyboardData, mainImageSrc) {
     }
 
     prevBtn.addEventListener('click', () => {
-        if (currentIndex > 0) {
+        if (prevBtn.classList.contains("disabled")){ 
+            errorAudio.play();
+        } else if (currentIndex > 0) {
             showImage(currentIndex - 1);
         }
     });
+
     nextBtn.addEventListener('click', () => {
-        if (currentIndex < availableImages.length - 1) {
+        if (nextBtn.classList.contains("disabled")){ 
+            errorAudio.play();
+        } else if (currentIndex < availableImages.length - 1) {
             showImage(currentIndex + 1);
         }
     });

@@ -68,6 +68,8 @@ topButtons.querySelectorAll("div").forEach(block => {
                 setTimeout(() => {
                     button.classList.remove("inactive")
                 }, 2500);
+            } else {
+                errorAudio.play();
             }
         })      
     });

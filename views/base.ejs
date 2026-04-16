@@ -58,10 +58,8 @@
                             <li><img src="/image/list-node.gif"><a href="/2.0">Version 2.0</a></li>
                         </ul>
                     </div>
-                    <video class="clippy" autoplay muted loop playsinline disablePictureInPicture>
-                        <source src="image/clippy/idle.webm" type="video/webm">
-                    </video>
-                    <script src="clippy.js"></script>
+                    <video class="clippy-anim" src="video/idle.webm" autoplay muted loop playsinline disablePictureInPicture></video>
+                    <video class="clippy" src="video/idle.webm" autoplay muted loop playsinline disablePictureInPicture></video>
                 </div>
             </div>
             <div class="right">
@@ -74,5 +72,6 @@
             <a href="<%= activePage === 'socials' ? '#' : '/socials' %>">© 2026 THOAkatosh. No rights are reserved.</a>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -13,6 +13,14 @@
     --color-text: #3366FF;
     --color-list-bg: #edf2fb;
     --color-text-highlight: #000080;
+    --cursor-default: url("image/cursor/default.png"), default;
+    --cursor-pointer: url("image/cursor/pointer.png") 7 0, pointer;
+    --cursor-not-allowed: url("image/cursor/not-allowed.png"), not-allowed;
+    --cursor-move: url("image/cursor/move.png") 12 12, move;
+}
+
+body {
+    cursor: var(--cursor-default);
 }
 
 .base {
@@ -98,25 +106,38 @@
 
 .list-content-tabs li .inactive {
     color: gray;
-    cursor: not-allowed;
+    cursor: var(--cursor-not-allowed);
 }
 
 .list-content-tabs li .current {
     color: var(--color-text-highlight);
-    cursor: not-allowed;
+    cursor: var(--cursor-not-allowed);
 }
 
 .list-content-tabs img {
     margin-right: 7px;
 }
 
-.clippy {
-    cursor: pointer;
+.clippy, .clippy-anim {
+    cursor: var(--cursor-pointer);
     position: absolute;
     width: 150px;
     height: 150px;
     left: 0;
     bottom: 10px;
+    transition: all 50ms;
+}
+
+.clippy.hidden {
+    opacity: 0;
+}
+
+.clippy-anim {
+    opacity: 0;
+}
+
+.clippy-anim.show {
+    opacity: 1;
 }
 
 .right {
@@ -158,6 +179,7 @@
 }
 
 a {
+    cursor: var(--cursor-pointer);
     color: var(--color-text);
     text-decoration: none;
 }

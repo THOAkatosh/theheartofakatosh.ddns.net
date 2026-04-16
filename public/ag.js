@@ -36,6 +36,8 @@ linktext.forEach(button => {
             setTimeout(() => {
                 button.classList.remove("inactive")
             }, 2500);
+        } else {
+                errorAudio.play();
         }
     }) 
 })

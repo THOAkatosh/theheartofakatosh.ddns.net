@@ -6,6 +6,9 @@
     --color-text: #3366FF;
     --color-list-bg: #edf2fb;
     --color-text-highlight: #000080;
+    --cursor-default: url("image/cursor/default.png"), default;
+    --cursor-pointer: url("image/cursor/pointer.png") 7 0, pointer;
+    --cursor-not-allowed: url("image/cursor/not-allowed.png"), not-allowed;
 }
 
 .tg-discord-holder {
@@ -33,13 +36,13 @@
     font-weight: bolder;
     align-items: center;
     color: var(--color-text-highlight);
-    cursor: pointer;
+    cursor: var(--cursor-pointer);
     text-decoration: none;
 }
 
 .Discord > a.inactive, .Telegram > a.inactive {
     color: gray;
-    cursor: not-allowed;
+    cursor: var(--cursor-not-allowed);
 }
 
 .Discord > a.inactive img, .Telegram > a.inactive img {
@@ -78,7 +81,7 @@
     height: 145px;
     border: 1px solid var(--color-blue);
     background-color: var(--color-list-bg);
-    cursor: pointer;
+    cursor: var(--cursor-pointer);
 }
 
 .linktext {

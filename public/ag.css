@@ -6,6 +6,9 @@
     --color-text: #3366FF;
     --color-list-bg: #edf2fb;
     --color-text-highlight: #000080;
+    --cursor-default: url("image/cursor/default.png"), default;
+    --cursor-pointer: url("image/cursor/pointer.png") 7 0, pointer;
+    --cursor-not-allowed: url("image/cursor/not-allowed.png"), not-allowed;
 }
 
 .server-holder {
@@ -34,7 +37,7 @@
 }
 
 .linktext:hover {
-    cursor: pointer;
+    cursor: var(--cursor-pointer);
 }
 
 .linktext .arrow {
@@ -49,7 +52,7 @@
 
 .linktext.inactive {
     color: gray;
-    cursor: not-allowed;
+    cursor: var(--cursor-not-allowed);
 }
 
 .linktext.inactive img {
