@@ -36,6 +36,18 @@
     "Img_Dir": "image/wish_boards/8BitDo_Retro_108_Fami_Edition"
   },
   {
+    "Brand": "Keychron",
+    "Name": "K10 HE",
+    "Switch_Type": "Magnet",
+    "Switch": "Gateron Nebula",
+    "Price": "",
+    "Description": "",
+    "Brand_Color": "#f8f0d8",
+    "Switch_Type_Color": "#D699EA",
+    "Switch_Color": "#FFFFFF",
+    "Img_Dir": "image/wish_boards/Keychron_K10_HE"
+  },
+  {
     "Brand": "Logitech",
     "Name": "G15 rev. 1",
     "Switch_Type": "Membrane",
