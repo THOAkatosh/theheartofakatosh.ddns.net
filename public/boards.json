@@ -73,6 +73,30 @@
     },
     {
         "Brand": "DEXP",
+        "Name": "Tanto RGB",
+        "Switch_Type": "Mechanical",
+        "Switch": "Outemu Red",
+        "Price": "2250",
+        "Description": "",
+        "Brand_Color": "#b4a7d6",
+        "Switch_Type_Color": "#ea9999",
+        "Switch_Color": "#e06666",
+        "Img_Dir": "image/boards/DEXP_Tanto_RGB"
+    },
+    {
+        "Brand": "DEXP",
+        "Name": "Elder",
+        "Switch_Type": "Mechanical",
+        "Switch": "Outemu Red",
+        "Price": "1450",
+        "Description": "",
+        "Brand_Color": "#b4a7d6",
+        "Switch_Type_Color": "#ea9999",
+        "Switch_Color": "#e06666",
+        "Img_Dir": "image/boards/DEXP_Elder"
+    },
+    {
+        "Brand": "DEXP",
         "Name": "DK-G956",
         "Switch_Type": "Mechanical",
         "Switch": "Zeryou Red Low",
