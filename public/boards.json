@@ -1,5 +1,17 @@
 [
     {
+        "Brand": "Advantech",
+        "Name": "KBD-6307",
+        "Switch_Type": "Mechanical",
+        "Switch": "Alps SKBM White (simplified white Alps)",
+        "Price": "2600",
+        "Description": "",
+        "Brand_Color": "#1A6B5A",
+        "Switch_Type_Color": "#cc0000",
+        "Switch_Color": "#8B6914",
+        "Img_Dir": "image/boards/Advantech_KBD-6307"
+    },
+    {
         "Brand": "AULA",
         "Name": "HERO 84 HE",
         "Switch_Type": "Mechanical",
