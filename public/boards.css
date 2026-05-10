@@ -17,7 +17,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#list_holder {
+#listHolder {
     display: grid;
     gap: 15px;
     margin: 0 auto 20px auto;
@@ -107,7 +107,7 @@
 
 .imgcontainer {
     position: relative;
-    margin: 10px 0 5px 0;
+    margin: 10px 0 0 0;
     width: calc(16px * var(--image-small));
     height: calc(9px * var(--image-small));
     transition-duration: 0.3s;
@@ -139,17 +139,12 @@
     height: calc(9px * var(--image-small));
 }
 
-.keyboard-name {
-    font-weight: bolder;
-}
-
 .board > a {
     cursor: var(--cursor-default);
-    text-shadow: 1px 1px 1px #000000e0;
+    font-weight: bolder;
     color: var(--color-text);
     font-size: 10pt;
 }
-
 
 .card-overlay {
     position: fixed;
@@ -246,13 +241,12 @@
 
 .keyboard-description p {
     color: var(--color-text);
-    text-shadow: 1px 1px 1px #000000e0;
+    font-weight: bolder;
     margin: 10px 0;
 }
 
 .card_desc_price span {
     color: #ff5722;
-    text-shadow: 1px 1px 1px #000000e0;
 }
 
 .card_desc_price {
@@ -262,8 +256,8 @@
 .numbering {
     position: relative;
     width: fit-content;
-    bottom: 27px;
-    left: 6px;
+    bottom: 23px;
+    left: 7px;
     margin-bottom: -13px !important;
     font-size: small;
     font-weight: bolder !important;
@@ -274,7 +268,7 @@
 }
 
 .keyboard-card h2 {
-    text-shadow: 1px 1px 1px #000000e0;
+    /* text-shadow: 1px 1px 1px #000000e0; */
     font-size: 20px;
     margin-bottom: 20px;
     border-bottom: 2px solid var(--color-text-highlight);
@@ -361,4 +355,52 @@
 
 .goBack a:hover {
     text-shadow: 0 0 3px rgba(182, 219, 251, 0.73);
+}
+
+#sortHolder {
+    display: flex;
+    gap: 10px;
+    margin: 0px auto 20px auto;
+    padding: 10px;
+    border: 1px solid var(--color-blue);
+    background-color: var(--color-list-bg);
+    width: 768px;
+    justify-content: space-between;
+}
+
+#sortHolder input {
+    width: -webkit-fill-available;
+    padding: 0 10px;
+}
+
+#sortHolder input:focus {
+    outline: none;
+}
+
+#brandSortButton {
+    display: flex;
+    font-size: 10pt;
+    color: var(--color-text);
+    width: fit-content;
+    padding: 0 10px;
+    height: 30px;
+    flex-shrink: 0;
+    border: 1px solid var(--color-blue);
+    background-color: var(--color-list-bg);
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    cursor: var(--cursor-pointer);
+}
+
+#brandSortButton:hover {
+    background-color: var(--color-lighterer-blue);
+}
+
+h2 {
+    display: flex;
+    width: 100%;
+    grid-column: 1 / -1;
+    margin-bottom: 10px;
+    justify-content: space-between;
 }

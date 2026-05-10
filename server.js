@@ -1,6 +1,8 @@
 const serveIndex = require('serve-index');
 const engine = require('ejs-mate');
 const express = require('express');
+const fs = require('fs').promises;
+const path = require('path');
 const app = express();
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
@@ -62,6 +64,44 @@ app.use('/fastdl',
         icons: true
     })
 );
+
+app.get('/api/get-board-img', async (req, res) => {
+    try {
+        const { path: boardType, board } = req.query;
+        if (!boardType || (boardType !== 'boards' && boardType !== 'wish-boards')) {
+            return res.status(400).json({ 
+                success: false, 
+                error: 'Parameter path must be "boards" or "wish-boards"' 
+            });
+        }
+        if (!board) {
+            return res.status(400).json({ 
+                success: false, 
+                error: 'Specify board' 
+            });
+        }
+        const allowedBase = path.join(__dirname, 'public', 'image', boardType);
+        const fullPath = path.join(allowedBase, board);
+        if (!fullPath.startsWith(allowedBase)) {
+            return res.status(403).json({ 
+                success: false, 
+                error: 'Access denied' 
+            });
+        }
+        const files = await fs.readdir(fullPath);
+        res.json({ 
+            success: true, 
+            files: files,
+            count: files.length,
+            path: `${boardType}/${board}`
+        });
+    } catch (error) {
+        res.status(500).json({ 
+            success: false, 
+            error: error.message
+        });
+    }
+});
 
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
