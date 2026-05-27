@@ -1,5 +1,17 @@
 [
     {
+        "Brand": "IBM",
+        "Name": "Model M",
+        "Switch_Type": "Membrane Buckling Spring",
+        "Switch": "",
+        "Price": "12400",
+        "Description": "",
+        "Brand_Color": "#1A4B8C",
+        "Switch_Type_Color": "#1A7A8A",
+        "Switch_Color": "#1A7A8A",
+        "Img_Dir": "image/boards/IBM_Model_M"
+    },
+    {
         "Brand": "Advantech",
         "Name": "KBD-6307",
         "Switch_Type": "Mechanical",
@@ -194,12 +206,12 @@
         "Brand": "Razer",
         "Name": "BlackWidow Ultimate Stealth 2016",
         "Switch_Type": "Mechanical",
-        "Switch": "Razer Orange (Greetech)",
-        "Price": "1580",
+        "Switch": "Outemu Cream Yellow",
+        "Price": "2730",
         "Description": "",
         "Brand_Color": "#4C8B2F",
         "Switch_Type_Color": "#cc0000",
-        "Switch_Color": "#D97519",
+        "Switch_Color": "#F5A153",
         "Img_Dir": "image/boards/Razer_BlackWidow_Ultimate_Stealth_2016"
     },
     {
